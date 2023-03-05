@@ -1,9 +1,14 @@
 {
+  "name": "remix-chatter",
+  "version": "1.0.0",
+  "description": "A chat app built with Remix and Supabase",
   "private": true,
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
     "dev": "remix dev",
+    "lint": "eslint . --ext .ts,.tsx",
+    "update-types": "npx supabase gen types typescript --project-id \"$PROJECT_ID\" > types/database.ts",
     "typecheck": "tsc"
   },
   "dependencies": {

@@ -13,7 +13,7 @@ import {
 import { createBrowserClient } from '@supabase/auth-helpers-remix'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { useEffect, useState } from 'react'
-import type { Database } from 'db-types'
+import type { Database } from 'types/database'
 import { createServerSupabase } from '~/supabase.server'
 
 export type OutletContext = {
